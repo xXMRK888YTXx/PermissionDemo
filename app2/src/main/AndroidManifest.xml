@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <permission
+        android:name="five.nights.with.wassim.normal"
+        android:banner="@drawable/xi"
+        android:protectionLevel="normal"
+        android:description="@string/app_name" />
+    <!-- <service
+            android:name=".EventDeviceTrackerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_params"/>
+        </service> -->
+    <permission
+        android:name="china_party_great_xi.dangerous"
+        android:description="@string/a"
+        android:icon="@drawable/xi"
+        android:label="@string/a3"
+        android:protectionLevel="dangerous" />
+
+    <permission
+        android:name="jason_statham.signature"
+        android:protectionLevel="signature" />
+
+    <permission
+        android:name="permission.knownSigner"
+        android:knownCerts="@array/known_certs"
+        android:protectionLevel="signature|knownSigner"
+        tools:targetApi="s" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PermissionDemo">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PermissionDemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".BossActivity2007"
+            android:exported="true"
+            android:permission="five.nights.with.wassim.normal" />
+
+        <activity
+            android:name=".SocialXRating"
+            android:exported="true"
+            android:permission="china_party_great_xi.dangerous" />
+
+        <activity
+            android:name=".JasonStatham"
+            android:exported="true"
+            android:permission="jason_statham.signature" />
+
+        <activity
+            android:name="Activity2"
+            android:exported="true"
+            android:permission="permission.knownSigner" />
+    </application>
+
+</manifest>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">app2</string>
+    <string name="a">Апрувни если уважаешь китай партия</string>
+    <string name="a2">Блатота</string>
+    <string name="a3">Китай топ</string>
+
+    <string-array name="known_certs">
+        <item>EE570523B15B7C77CBD1BEC71C72668A9CF17695ADFCB41B543874DF626F7B7D</item>
+    </string-array>
+
+</resources>

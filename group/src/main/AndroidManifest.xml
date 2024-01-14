@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <permission-group
+        android:name="father.of.great.china"
+        android:banner="@string/a5"
+        android:description="@string/a5"
+        android:label="@string/a5" />
+    <permission
+        android:name="china.xi"
+        android:label="@string/a1"
+        android:permissionGroup="father.of.great.china"
+        android:protectionLevel="dangerous" />
+
+
+    <permission-group
+        android:name="stupud.america.burger"
+        android:banner="@string/a4"
+        android:description="@string/a4"
+        android:label="@string/a4" />
+
+
+    <permission
+        android:name="us.bidon"
+        android:label="@string/a2"
+        android:permissionGroup="stupud.america.burger"
+        android:protectionLevel="dangerous" />
+    <permission
+        android:name="us.obema"
+        android:label="@string/a3"
+        android:permissionGroup="stupud.america.burger"
+        android:protectionLevel="dangerous" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PermissionDemo">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PermissionDemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
